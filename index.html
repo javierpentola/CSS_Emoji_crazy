@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Historia de los emojis</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .recuadros {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            z-index: 2;
+        }
+
+        .recuadro {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            width: 300px;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="context">
+        <h1>Historia de los emojis</h1>
+    </div>
+
+    <div class="area">
+        <ul class="circles">
+<li onclick="showInfo()">🍎</li>
+<li onclick="showInfo()">🌈</li>
+<li onclick="showInfo()">🐶</li>
+<li onclick="showInfo()">🌟</li>
+<li onclick="showInfo()">🚀</li>
+<li onclick="showInfo()">🍕</li>
+<li onclick="showInfo()">🎵</li>
+<li onclick="showInfo()">👾</li>
+<li onclick="showInfo()">🌺</li>
+<li onclick="showInfo()">🏈</li>
+<li onclick="showInfo()">🌍</li>
+<li onclick="showInfo()">📚</li>
+<li onclick="showInfo()">🎨</li>
+<li onclick="showInfo()">💡</li>
+<li onclick="showInfo()">🚴</li>
+<li onclick="showInfo()">🎉</li>
+<li onclick="showInfo()">📷</li>
+<li onclick="showInfo()">👻</li>
+<li onclick="showInfo()">🍦</li>
+<li onclick="showInfo()">🔥</li>
+<li onclick="showInfo()">🐱</li>
+<li onclick="showInfo()">🌳</li>
+<li onclick="showInfo()">🏠</li>
+<li onclick="showInfo()">💻</li>
+<li onclick="showInfo()">🌊</li>
+<li onclick="showInfo()">🌕</li>
+<li onclick="showInfo()">🎈</li>
+<li onclick="showInfo()">🚗</li>
+<li onclick="showInfo()">💎</li>
+<li onclick="showInfo()">👑</li>
+<li onclick="showInfo()">🦄</li>
+<li onclick="showInfo()">🍍</li>
+<li onclick="showInfo()">🏖️</li>
+<li onclick="showInfo()">🛩️</li>
+<li onclick="showInfo()">⚡</li>
+<li onclick="showInfo()">🍣</li>
+<li onclick="showInfo()">📝</li>
+<li onclick="showInfo()">🔍</li>
+<li onclick="showInfo()">🤖</li>
+<li onclick="showInfo()">⚽</li>
+<li onclick="showInfo()">🎧</li>
+<li onclick="showInfo()">🦋</li>
+<li onclick="showInfo()">🌧️</li>
+<li onclick="showInfo()">🌮</li>
+<li onclick="showInfo()">🎮</li>
+<li onclick="showInfo()">⏰</li>
+<li onclick="showInfo()">🎡</li>
+<li onclick="showInfo()">🎢</li>
+<li onclick="showInfo()">📱</li>
+<li onclick="showInfo()">🌵</li>
+<li onclick="showInfo()">🍒</li>
+<li onclick="showInfo()">⛵</li>
+<li onclick="showInfo()">🎭</li>
+<li onclick="showInfo()">🦁</li>
+<li onclick="showInfo()">🌶️</li>
+<li onclick="showInfo()">🍵</li>
+<li onclick="showInfo()">📖</li>
+<li onclick="showInfo()">🍩</li>
+<li onclick="showInfo()">💖</li>
+<li onclick="showInfo()">🏆</li>
+<li onclick="showInfo()">🐧</li>
+<li onclick="showInfo()">💼</li>
+<li onclick="showInfo()">🎹</li>
+<li onclick="showInfo()">🌻</li>
+<li onclick="showInfo()">🎤</li>
+<li onclick="showInfo()">🍺</li>
+<li onclick="showInfo()">🌏</li>
+<li onclick="showInfo()">👓</li>
+<li onclick="showInfo()">🎃</li>
+<li onclick="showInfo()">🐢</li>
+<li onclick="showInfo()">⛷️</li>
+<li onclick="showInfo()">🛠️</li>
+<li onclick="showInfo()">🚢</li>
+<li onclick="showInfo()">🐠</li>
+<li onclick="showInfo()">🌼</li>
+<li onclick="showInfo()">🎺</li>
+<li onclick="showInfo()">🏀</li>
+<li onclick="showInfo()">🌈</li>
+<li onclick="showInfo()">🚴</li>
+<li onclick="showInfo()">🍇</li>
+<li onclick="showInfo()">🏰</li>
+<li onclick="showInfo()">🌡️</li>
+<li onclick="showInfo()">🎲</li>
+<li onclick="showInfo()">🐻</li>
+<li onclick="showInfo()">🛒</li>
+<li onclick="showInfo()">🔮</li>
+
+        </ul>
+    </div>
+
+<script>
+    function showInfo() {
+        alert('Información a rellenar');
+    }
+
+    // Código para establecer un tamaño de fuente aleatorio para cada emoji
+    document.addEventListener("DOMContentLoaded", function() {
+        const lis = document.querySelectorAll('.circles li');
+        lis.forEach(li => {
+            const randomSize = Math.floor(Math.random() * 50) + 16; // tamaño aleatorio entre 16 y 65
+            li.style.fontSize = randomSize + 'px';
+
+            const randomLeft = Math.floor(Math.random() * 100); // posición aleatoria para 'left' entre 0 y 100
+            li.style.left = randomLeft + '%';
+
+            const randomDelay = Math.floor(Math.random() * 25); // retraso aleatorio entre 0s y 25s
+            li.style.animationDelay = randomDelay + 's';
+        });
+    });
+</script>
+
+</body>
+
+</html>
